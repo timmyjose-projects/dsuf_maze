@@ -79,7 +79,9 @@ public class Maze {
           from.hasWestWall = false;
           to.hasEastWall = false;
       }
+
     } while (dsu.find(start) != dsu.find(finish));
+
     Graphics.printMaze(this);
   }
 
